@@ -89,6 +89,10 @@ app.get("/forms", (req, res, next) => {
   res.render("formdemo");
 });
 
+app.post("/forms2", (req, res, next) => {
+  res.json(req.body);
+});
+
 app.get("/forms2", (req, res, next) => {
   res.render("formdemo2");
 });
@@ -97,12 +101,12 @@ app.post("/forms", (req, res, next) => {
   res.json(req.body);
 });
 
-app.post("/forms2", (req, res, next) => {
-  res.json(req.body);
-});
-
 app.get("/boots", (req, res, next) => {
   res.render("bootstrapdemo");
+});
+
+app.get("/boots2", (req, res, next) => {
+  res.render("bootstrapdemo2");
 });
 
 app.get("/pets", (req, res, next) => {
